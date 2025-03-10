@@ -16,9 +16,9 @@ const arrayOfHealthTips = [
     for (let i = 0; i < countOfPills; i++) {
       const pill = document.createElement("span");
       pill.textContent = "💊"; 
-      pill.style.fontSize = "30px";
+      pill.style.fontSize = "25px";
       pill.style.marginRight = "5px";
-      pill.style.transition = "color 0.3s"; 
+ 
       if (i >= 5 - countOfPills) {
         pill.style.color = "gray"; 
       }
