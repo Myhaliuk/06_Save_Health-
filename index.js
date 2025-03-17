@@ -52,6 +52,42 @@ const arrayOfHealthTips = [
       document.getElementById("btn_love_wishes").style.display = "block"; 
     }
   });
+
+  let arrayOfImages = [
+    "1.jpg", 
+    "2.jpg", 
+    "3.jpg", 
+    "4.jpg"
+  ];
+  
+  let galleryImage = 1;
+  
+  function updateImage() {
+    document.getElementById("main-image").setAttribute('src', 'img/gallery/' + arrayOfImages[galleryImage]);
+  }
+  
+  document.getElementById('right-arrow').addEventListener('click', () => {
+    galleryImage++;
+  
+    if (galleryImage >= arrayOfImages.length) {
+      galleryImage = 0;
+    }
+  
+    updateImage();
+    console.log(galleryImage);
+  });
+  
+  document.getElementById('left-arrow').addEventListener('click', () => {
+    galleryImage--;
+  
+    if (galleryImage < 0) {
+      galleryImage = arrayOfImages.length - 1;
+    }
+  
+    updateImage();
+    console.log(galleryImage);
+  });
   
   
-  updatePillCount();
+  
+
