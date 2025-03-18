@@ -89,5 +89,44 @@ const arrayOfHealthTips = [
   });
   
   
+
+  const arrayOfObjects = [
+   { 
+    id:"1",
+    title:"Аевіт",
+    photo:"",
+    descripyion:"",
+    rating:"",
+    type:""
+
+  },
+  { 
+    id:"2",
+    title:"Вітамін С",
+    photo:"",
+    descripyion:"",
+    rating:"",
+    type:""
+
+  },
+
+  ]
+  console.log(arrayOfObjects)
+
+  arrayOfObjects.forEach((item) =>{console.log(item)
+
+    let divVitamin = document.createElement('div')
+    divVitamin.innerText = item.title
+    divVitamin.classList.add('vitamin')
+
+    document.getElementById("p-vitamins").appendChild(divVitamin)
+
+
+
+
+
+
+
+  })
   
 
