@@ -155,7 +155,7 @@ body {
   }
   
   #buy-pill-btn:hover {
-    background-color: #0056b3;
+    background-color: #5fa6f1;
   }
 
 
@@ -166,7 +166,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
 
-  }
+  }    
 
 
   .vitamin {
