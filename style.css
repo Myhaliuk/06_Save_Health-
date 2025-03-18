@@ -157,3 +157,30 @@ body {
   #buy-pill-btn:hover {
     background-color: #0056b3;
   }
+
+
+
+  #p-vitamins {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
+
+
+  .vitamin {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    background-color: #49c5c588;
+    color: white;
+    border: outset ;
+    border-radius: 10px 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+
+  }
