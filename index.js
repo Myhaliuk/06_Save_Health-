@@ -88,24 +88,27 @@ const arrayOfHealthTips = [
     console.log(galleryImage);
   });
   
+
+
+
   
 
   const arrayOfObjects = [
    { 
     id:"1",
-    title:"Аевіт",
-    photo:"",
-    descripyion:"",
-    rating:"",
+    title:"Вітамін B12",
+    photo:"vitamins (1).png",
+    description:"Кобаламін відіграє надзвичайно важливу роль у правильному функціонуванні нервової системи, впливаючи, таким чином, на роботу всіх органів. Якщо в організмі бракує вітаміну В12, це також призводить до дефіциту вітаміну В1, навіть при достатній його кількості в їжі.",
+    rating:"4",
     type:""
 
   },
   { 
     id:"2",
     title:"Вітамін С",
-    photo:"",
-    descripyion:"",
-    rating:"",
+    photo:"vitamin-c (1).png",
+    description:"Кристалічний порошок білого або майже білого кольору чи безбарвні кристали, що змінюють колір під впливом повітря і вологи, насипна густина після усадки — 1,0–1,2 г/см3",
+    rating:"3",
     type:""
 
   },
@@ -122,11 +125,18 @@ const arrayOfHealthTips = [
     document.getElementById("p-vitamins").appendChild(divVitamin)
 
 
-
-
-
-
-
+    divVitamin.innerHTML = `
+    <h3>${item.title}</h3>
+    <hr>
+    <img src="img/vitamins/${item.photo}"  alt"">
+    <p>${item.description}</p>
+    <span>${'⭐'.repeat(item.rating)+'✴'.repeat(5-item.rating)}</span>
+    <p>type</p>
+    <span>id</span>
+    
+    
+    
+    `
   })
-  
 
+  
