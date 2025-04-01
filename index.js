@@ -109,7 +109,7 @@ const arrayOfHealthTips = [
     photo:"vitamin-c (1).png",
     description:"Кристалічний порошок білого або майже білого кольору чи безбарвні кристали, що змінюють колір під впливом повітря і вологи, насипна густина після усадки — 1,0–1,2 г/см3",
     rating:"3",
-    type:""
+    type:"водостійка"
 
   },
 
@@ -130,9 +130,10 @@ const arrayOfHealthTips = [
     <hr>
     <img src="img/vitamins/${item.photo}"  alt"">
     <p>${item.description}</p>
-    <span>${'⭐'.repeat(item.rating)+'✴'.repeat(5-item.rating)}</span>
-    <p>type</p>
-    <span>id</span>
+    <p></p>
+    <p>${item.type}</p> 
+    <p>${'⭐'.repeat(item.rating)+'✴'.repeat(5-item.rating)}</p>
+    
     
     
     
