@@ -89,7 +89,14 @@ body {
     background-color: gray;
   }
   
+.gallery {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
 
 
   .standard {
