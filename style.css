@@ -1,58 +1,45 @@
 body {
-    padding: 0;
-    font-family: "Arial", sans-serif;
-    font-size : 14px;
-    line-height : 18px;
-    color: #000000;
-      ;
-    background: url("img/medical-healthcare-blue-color_1017-26807.avif") 0% / cover lightblue round border-box ;
-  }
-  
-  h1 {
-    width: 260px;
-    font-family: "Georgia", serif;
-    font-size: 36px;
-    line-height: 36px;
-    
-  }
-  
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background: url("img/medical-healthcare-blue-color_1017-26807.avif") 0% /
+    cover lightblue round border-box;
+}
 
+h1 {
+  width: 260px;
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  line-height: 36px;
+}
 
+h2 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ffffff;
+}
 
+.site-header {
+  margin-bottom: 30px;
+}
 
-  
+.skills-item {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  background-color: #49c5c588;
+  color: white;
+  border: outset;
+  border-radius: 10px 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #000000;
+}
 
-  
-
-
-
-
-
-  h2 {
-    padding-bottom: 12px;
-    border-bottom: 1px solid #ffffff;
-  }
-  
-  .site-header {
-    margin-bottom: 30px;
-  }
-  
-  .skills-item {
-    margin-bottom: 15px;
-    padding-left: 20px;
-    background-color: #49c5c588;
-    color: white;
-    border: outset ;
-    border-radius: 10px 10px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    color: #000000;
-  }
-  
-.gallerry{
+.gallerry {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -60,157 +47,158 @@ body {
   align-items: center;
 }
 
+#left-arrow {
+  width: 80px;
+  height: 80px;
+}
+#main-image {
+  width: 300px;
+  height: 200px;
+}
+#right-arrow {
+  width: 80px;
+  height: 80px;
+}
 
-  #left-arrow {
-    width: 80px;
-    height: 80px;
-  }
-  #main-image {
-    width: 300px;
-    height: 200px;
-  }
-  #right-arrow {
-    width: 80px;
-    height: 80px;
-  }
+.arrow-button {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 
+.arrow-button:hover {
+  background-color: green;
+}
 
- 
-  .arrow-button {
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .arrow-button:hover {
-    background-color: green;
-  }
-  
-  .arrow-button:active {
-    background-color: gray;
-  }
-  
+.arrow-button:active {
+  background-color: gray;
+}
+
 .gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.standard {
+  border-color: #ffc5b3;
+  color: #000000;
+}
 
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.site-header img {
+  display: block;
+  margin: 0 auto;
+}
+
+.features {
+  margin-bottom: 30px;
+}
+
+.features p {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 5px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.skills-list {
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+#buy-pill-btn {
+  background-color: #007bff;
+}
+
+#buy-pill-btn:hover {
+  background-color: #5fa6f1;
+}
+
+#p-vitamins {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.vitamin {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  background-color: #49c5c588;
+  color: white;
+  border: outset;
+  border-radius: 10px 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+ 
+  font-size: 16px;
+  color: #000000;
+}
+
+.vitamin h3 {
+  font-size: 24px;
+}
+
+.vitamin div {
+  margin-top: auto;
+  width: 80%;
 }
 
 
-  .standard {
-    border-color: #ffc5b3;
-    color: #000000;
-  }
-  
-  .container {
-    width: 600px;
-    margin: 0 auto;
-  }
-  
-  .site-header img {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .features {
-    margin-bottom: 30px;
-  }
-  
-  .features p {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin: 0 5px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
-  
-  .skills-list {
-    padding: 0;
-    list-style: none;
-  }
-  
-  .site-footer {
-    display: flex;
-    justify-content: space-between;
-    color: #999999;
-  }
-  button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-  }
-  
-  button:disabled {
-    background-color: #aaa;
-    cursor: not-allowed;
-  }
-  
-  #buy-pill-btn {
-    background-color: #007BFF;
-  }
-  
-  #buy-pill-btn:hover {
-    background-color: #5fa6f1;
-  }
+
+.vitamin:hover p:first-child{
+  color: #000000;
+}
 
 
 
-  #p-vitamins {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-  }    
+.vitamin:hover p:first-child{
+  align-self: flex-end;
+  font-size: 10px;
+  color: #999999;  
+}
 
 
-  .vitamin {
-    margin-bottom: 15px;
-    padding-left: 20px;
-    background-color: #49c5c588;
-    color: white;
-    border: outset ;
-    border-radius: 10px 10px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    color: #000000;
+.vitamin p:last-child {
+  text-align: center;
+  width: 100%;
+}
 
-  }
-
-  .vitamin h3{
-    font-size: 24px;
-  }
-
-  .vitamin div {
-    margin-top: auto;
-    width: 80%;
-
-
-  }
-
-
-  .vitamin p:last-child{
-    text-align: center;
-    width: 100%;
-
-  }
