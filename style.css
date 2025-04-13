@@ -4,8 +4,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  background: url("img/medical-healthcare-blue-color_1017-26807.avif") 0% /
-    cover lightblue round border-box;
+  background: url("img/13313271_v870-tang-36.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1 {
@@ -20,74 +20,13 @@ h2 {
   border-bottom: 1px solid #ffffff;
 }
 
-.site-header {
-  margin-bottom: 30px;
-}
-
-.skills-item {
-  margin-bottom: 15px;
-  padding-left: 20px;
-  background-color: #49c5c588;
-  color: white;
-  border: outset;
-  border-radius: 10px 10px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  color: #000000;
-}
-
-.gallerry {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#left-arrow {
-  width: 80px;
-  height: 80px;
-}
-#main-image {
-  width: 300px;
-  height: 200px;
-}
-#right-arrow {
-  width: 80px;
-  height: 80px;
-}
-
-.arrow-button {
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.arrow-button:hover {
-  background-color: green;
-}
-
-.arrow-button:active {
-  background-color: gray;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.standard {
-  border-color: #ffc5b3;
-  color: #000000;
-}
-
 .container {
   width: 600px;
   margin: 0 auto;
+}
+
+.site-header {
+  margin-bottom: 30px;
 }
 
 .site-header img {
@@ -95,8 +34,17 @@ h2 {
   margin: 0 auto;
 }
 
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+}
+
 .features {
   margin-bottom: 30px;
+  background-color: #49c5c588;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .features p {
@@ -109,46 +57,67 @@ h2 {
   background-position: center top;
 }
 
+.skills-item {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  background-color: #49c5c588;
+  border: outset;
+  border-radius: 10px 10px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+}
+
 .skills-list {
   padding: 0;
   list-style: none;
 }
 
-.site-footer {
+.gallery {
   display: flex;
-  justify-content: space-between;
-  color: #999999;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #49c5c588;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
-button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+
+#main-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#left-arrow,
+#right-arrow {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.arrow-button {
   cursor: pointer;
-  border-radius: 12px;
-  transition: background-color 0.3s, transform 0.3s;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  padding: 5px;
 }
 
-button:hover {
-  background-color: #45a049;
-  transform: scale(1.05);
+.arrow-button:hover {
+  background-color: #ffffffcc;
+  border: 2px solid #49c5c5;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #49c5c5;
 }
 
-button:disabled {
-  background-color: #aaa;
-  cursor: not-allowed;
-}
-
-#buy-pill-btn {
-  background-color: #007bff;
-}
-
-#buy-pill-btn:hover {
-  background-color: #5fa6f1;
+.arrow-button:active {
+  background-color: #49c5c5;
+  transform: scale(0.95);
 }
 
 #p-vitamins {
@@ -162,13 +131,10 @@ button:disabled {
   margin-bottom: 15px;
   padding-left: 20px;
   background-color: #49c5c588;
-  color: white;
   border: outset;
   border-radius: 10px 10px;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
- 
   font-size: 16px;
   color: #000000;
 }
@@ -177,28 +143,59 @@ button:disabled {
   font-size: 24px;
 }
 
-.vitamin div {
-  margin-top: auto;
-  width: 80%;
+.vitamin img {
+  max-width: 100px;
+  margin-top: 10px;
 }
-
-
-
-.vitamin:hover p:first-child{
-  color: #000000;
-}
-
-
-
-.vitamin:hover p:first-child{
-  align-self: flex-end;
-  font-size: 10px;
-  color: #999999;  
-}
-
 
 .vitamin p:last-child {
   text-align: center;
   width: 100%;
 }
+
+button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #006f98;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+#buy-pill-btn {
+  background-color: #f44336;
+}
+
+#buy-pill-btn:hover {
+  background-color: #d32f2f;
+}
+
+#pill-count span {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.vitamin:hover p:first-child {
+  color: #000000;
+}
+
+.vitamin:hover p:first-child {
+  align-self: flex-end;
+  font-size: 10px;
+  color: #999999;
+}
+
+
 

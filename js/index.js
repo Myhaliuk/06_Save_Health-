@@ -64,7 +64,6 @@ document.getElementById("right-arrow").addEventListener("click", () => {
   }
 
   updateImage();
-  console.log(galleryImage);
 });
 
 document.getElementById("left-arrow").addEventListener("click", () => {
@@ -75,7 +74,6 @@ document.getElementById("left-arrow").addEventListener("click", () => {
   }
 
   updateImage();
-  console.log(galleryImage);
 });
 
 const arrayOfObjects = [
@@ -85,7 +83,7 @@ const arrayOfObjects = [
     photo: "vitamins (1).png",
     description:
       "Кобаламін відіграє надзвичайно важливу роль у правильному функціонуванні нервової системи, впливаючи, таким чином, на роботу всіх органів. Якщо в організмі бракує вітаміну В12, це також призводить до дефіциту вітаміну В1, навіть при достатній його кількості в їжі.",
-    schema: "",
+    schema: "images.png",
     rating: "4",
     type: "розчинна",
   },
@@ -98,42 +96,38 @@ const arrayOfObjects = [
     schema: "L-Ascorbic_acid.svg",
     rating: "3",
     type: "водостійка",
-
   },
   {
     id: "3",
     title: "Вітамін A",
     photo: "multivitamin (1).png",
     description:
-      "Вітамін А — група близьких за хімічною будовою речовин, яка включає ретиноїди: ретинол (вітамін A1, аксерофтол), дегідроретинол (вітамін А2), ретиналь (ретинен, альдегід вітаміну A1), ретиноєву кислоту і кілька провітамінів — каротиноїдів, серед яких найважливішим є β-каротин. ",
-    schema: "",
-     rating: "5",
+      "Вітамін А — група близьких за хімічною будовою речовин, яка включає ретиноїди: ретинол (вітамін A1, аксерофтол), дегідроретинол (вітамін А2), ретиналь (ретинен, альдегід вітаміну A1), ретиноєву кислоту і кілька провітамінів — каротиноїдів, серед яких найважливішим є β-каротин.",
+    schema: "png-transparent-vitamin-a-carotene-retinol-retinal-others-angle-white-text.png",
+    rating: "5",
     type: "водостійка",
   },
 ];
-console.log(arrayOfObjects);
 
 arrayOfObjects.forEach((item) => {
-  console.log(item);
-
   let divVitamin = document.createElement("div");
-  divVitamin.innerText = item.title;
   divVitamin.classList.add("vitamin");
 
-  document.getElementById("p-vitamins").appendChild(divVitamin);
+  // Функція для обробки помилки при завантаженні зображення схеми
+  const onErrorSchema = (event) => {
+    event.target.onerror = null; // щоб уникнути зациклення
+    event.target.src = "img/vitamins/vitamin-a-schema.png"; // Встановлюємо схему вітаміну A
+  };
 
   divVitamin.innerHTML = `
     <h3>${item.title}</h3>
     <hr>
-    <img src="img/vitamins/${item.photo}"  alt"" onerror="this.onerrpr=null; this.src='img/vitamins/default.png:'">
-    <img src="img/vitamins/${item.schema}"  alt"">
+    <img src="img/vitamins/${item.photo}" alt="${item.title}" onerror="this.onerror=null; this.src='img/vitamins/default.png';">
+    <img src="img/vitamins/${item.schema}" alt="${item.title}" onerror="onErrorSchema(event)">
     <p>${item.description}</p>
-    <p></p>
-    <p>${item.type}</p> 
+    <p>${item.type}</p>
     <p>${"⭐".repeat(item.rating) + "✴".repeat(5 - item.rating)}</p>
-    
-    
-    
-    
-    `;
+  `;
+
+  document.getElementById("p-vitamins").appendChild(divVitamin);
 });
